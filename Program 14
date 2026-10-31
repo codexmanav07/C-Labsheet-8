@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class Calculator {
+public:
+    // Function for integer addition
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    // Function for decimal addition
+    double add(double a, double b) {
+        return a + b;
+    }
+};
+
+int main() {
+    Calculator c;
+
+    cout << "Integer Addition: " << c.add(10, 20);
+    cout << "\nDecimal Addition: " << c.add(5.5, 2.5);
+
+    return 0;
+}
+
+Output:
+Integer Addition: 30
+Decimal Addition: 8
