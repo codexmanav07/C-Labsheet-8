@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+// Base class
+class Person {
+public:
+    string name;
+    int age;
+
+    void getPersonDetails() {
+        cout << "Enter name: ";
+        cin >> name;
+
+        cout << "Enter age: ";
+        cin >> age;
+    }
+};
+
+// Derived class
+class Student : public Person {
+public:
+    float marks;
+
+    void getMarks() {
+        cout << "Enter marks: ";
+        cin >> marks;
+    }
+
+    void display() {
+        cout << "\nStudent Details\n";
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Marks: " << marks;
+    }
+};
+
+int main() {
+    Student s;
+
+    s.getPersonDetails();
+    s.getMarks();
+    s.display();
+
+    return 0;
+}
+
+Output:
+Enter name: Amit
+Enter age: 19
+Enter marks: 90
+
+Student Details
+Name: Amit
+Age: 19
+Marks: 90
