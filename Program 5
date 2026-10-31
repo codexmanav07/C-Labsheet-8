@@ -1,0 +1,32 @@
+#include <iostream>
+#include <sstream>
+using namespace std;
+
+// Function to count words
+int countWords(string str) {
+    string word;
+    int count = 0;
+
+    stringstream ss(str);
+
+    while (ss >> word) {
+        count++;
+    }
+
+    return count;
+}
+
+int main() {
+    string str;
+
+    cout << "Enter a sentence: ";
+    getline(cin, str);
+
+    cout << "Total words: " << countWords(str);
+
+    return 0;
+}
+
+Output:
+Enter a sentence: C++ is a programming language
+Total words: 5
