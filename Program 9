@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// Function to swap numbers
+void swapNumbers(int &a, int &b) {
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+int main() {
+    int x = 10, y = 20;
+
+    cout << "Before swapping: " << x << " " << y;
+
+    swapNumbers(x, y);
+
+    cout << "\nAfter swapping: " << x << " " << y;
+
+    return 0;
+}
+
+Output:
+Before swapping: 10 20
+After swapping: 20 10
