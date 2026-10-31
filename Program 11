@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+class Car {
+public:
+    string brand;
+    int price;
+
+    // Function to display car details
+    void display() {
+        cout << "Brand: " << brand << endl;
+        cout << "Price: " << price << endl;
+    }
+};
+
+int main() {
+    Car c1, c2;
+
+    c1.brand = "Toyota";
+    c1.price = 1500000;
+
+    c2.brand = "Honda";
+    c2.price = 1200000;
+
+    cout << "Car 1 Details:\n";
+    c1.display();
+
+    cout << "\nCar 2 Details:\n";
+    c2.display();
+
+    return 0;
+}
+
+Output:
+Car 1 Details:
+Brand: Toyota
+Price: 1500000
+
+Car 2 Details:
+Brand: Honda
+Price: 1200000
